@@ -4,7 +4,7 @@ require get_stylesheet_directory() . '/inc/theme-options/theme-options.php';
 
 //Create Shortcode to be used to generate random letters for smiley faces
 //[random_character]
-function random_character( ){
+function smiley_shortcode( ){
 	$random = rand(0,3);
 	$character;
 	if($random===0)
@@ -19,7 +19,7 @@ function random_character( ){
 	}
 	return '<span class="smiley">'.$random.'</span>';
 }
-add_shortcode( 'smiley', 'random_character' );
+add_shortcode( 'smiley', 'smiley_shortcode' );
 
 function fruitful_child_add_description_block ($atts, $content = null) {
 
