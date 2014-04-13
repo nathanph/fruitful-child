@@ -1,35 +1,26 @@
--------------------------------------------------------
-	Details
--------------------------------------------------------
+#Details
 
-This is a child theme for Fruitful Code's Wordpress theme: Fruitful.
-Fruitful Code: http://fruitfulcode.com/
+This is a child theme for Fruitful Code's Wordpress theme: Fruitful. I'm using this theme on [my site](http://nathanph.com/) currently.
 
--------------------------------------------------------
-	Copyright
--------------------------------------------------------
+[Fruitful Github](https://github.com/Fruitfulcode/Fruitful)
+
+#Copyright
 
 Fruitful is a free WordPress responsive theme with theme options panel, designed and developed in Fruitful Code (http://fruitfulcode.com/)
 Feel free to use and modify this theme as you like.
 Fruitful is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 
--------------------------------------------------------
     Fruitful Child Demo
--------------------------------------------------------
 
 http://nathanph.com
 Demo website configured via features and theme options. Used html, css and shortcodes for display content.
 
--------------------------------------------------------
-    Fruitful Demo
--------------------------------------------------------
+#Fruitful Demo
 
 http://themes.fruitfulcode.com/fruitful/
 Demo website configured via features and theme options. Used html, css and shortcodes for display content.
 
--------------------------------------------------------
-    Installation
--------------------------------------------------------
+#Installation
 
 1. Upload the "Fruitful" folder to the "/wp-content/themes/" directory
 or find in Appearance > Themes > Install theme, type “Fruitful” in search field.
@@ -38,9 +29,7 @@ or find in Appearance > Themes > Install theme, type “Fruitful” in search fi
 4. Go to "Appearance" > Theme options
 5. Config theme as you need.
 
--------------------------------------------------------
-    User Guide and theme features
--------------------------------------------------------
+#User Guide and theme features
 
 === WP Version ===
 As this theme uses the WordPress customizer feature for most options, it requires at least version 3.4 to work properly.
@@ -70,9 +59,7 @@ Choose web-safe fonts and 20 popular Google fonts.
 === Social links ===
 Easy add your links to your social profiles, which will be display in footer or header as icons.
 
--------------------------------------------------------
-    Changelog
--------------------------------------------------------
+#Changelog
 
 = 1.4.1 = 
 13.04.14
