@@ -46,17 +46,17 @@ Fruitful has custom theme options panel, for easy setup and config theme setting
 Go to the customizer screen in the logo and favicon section and upload your images.
 For best results, try uploading a logo with the following maximum dimensions => max-height :100px, max-width ; 250px
 
-=== Color customization ===  
+=== Color customization ===   
 Configure colors as you need.
 
 === Fonts ===
 Choose web-safe fonts and 20 popular Google fonts.
 
-=== 2 Jquery slider included ===
+=== 2 Jquery slider included ===  
 - Nivoslider
 - Flex slide
 
-=== Social links ===
+=== Social links ===  
 Easy add your links to your social profiles, which will be display in footer or header as icons.
 
 #Changelog
