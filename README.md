@@ -50,7 +50,7 @@ For best results, try uploading a logo with the following maximum dimensions => 
 === Color customization ===   
 Configure colors as you need.
 
-=== Fonts ===
+=== Fonts ===  
 Choose web-safe fonts and 20 popular Google fonts.
 
 === 2 Jquery slider included ===  
