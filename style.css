@@ -1,0 +1,64 @@
+/*
+ Theme Name:     Fruitful Child
+ Theme URI:      http://fruitfulcode.com/
+ Description:    Fruitful Child Theme
+ Author:         Nathan Hernandez
+ Author URI:     http://nathanph.com
+ Template:       fruitful
+ Version:        1.0.0
+*/
+
+@import url("../fruitful/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+@font-face
+{
+	font-family: humeur;
+	src: url('http://nathanph.com/fonts/Humeur.ttf');
+}
+
+
+.logo-description h1 span.second_word {
+	color: #00ff00;
+	font-size: 20px !important;
+   font-weight: 900;
+   -webkit-text-stroke: 0.8px black;
+   text-shadow:
+       0.8px 0.8px 0 #000,
+     -0.8px -0.8px 0 #000,  
+      0.8px -0.8px 0 #000,
+      -0.8px 0.8px 0 #000,
+       0.8px 0.8px 0 #000;*/
+}
+
+.smiley {
+	font-family: humeur; 
+	font-size: 110%; 
+	font-weight: bold;
+}
+ 
+.noshadow {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.entry-content p {
+	text-align: justify;
+}
+
+#masthead .social-icon a.github,
+#colophon .social-icon a.github {
+    background-image:url(./images/github.png);
+}
+
+/*
+.resp-tabs-container p {
+	text-align: justify;
+}
+/*
+.info_box_text {
+	text-align: justify !important;
+}*/
