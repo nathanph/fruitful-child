@@ -26,9 +26,9 @@ Demo website configured via features and theme options. Used html, css and short
 1. Upload the "Fruitful" folder to the "/wp-content/themes/" directory
 or find in Appearance > Themes > Install theme, type “Fruitful” in search field.
 2. Upload the "fruitful-child" folder to the "/wp-content/themes/" directory.
-3. Activate the Theme through the 'Themes' menu in WordPress
-4. Go to "Appearance" > Theme options
-5. Config theme as you need.
+3. Activate the Theme through the 'Themes' menu in WordPress.
+4. Go to "Appearance" > Theme options.
+5. Configure the theme as you need.
 
 #User Guide and theme features
 
