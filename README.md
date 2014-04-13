@@ -60,7 +60,7 @@ Choose web-safe fonts and 20 popular Google fonts.
 Easy add your links to your social profiles, which will be display in footer or header as icons.
 
 #Changelog
-
+ 
 = 1.4.1 =  
 13.04.14
 
