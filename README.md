@@ -7,18 +7,18 @@ I'm using this theme on [my site](http://nathanph.com/) currently.
 
 #Copyright
 
-Fruitful is a free WordPress responsive theme with theme options panel, designed and developed in Fruitful Code (http://fruitfulcode.com/)
+Fruitful is a free WordPress responsive theme with theme options panel, designed and developed by [Fruitful Code](http://fruitfulcode.com/).
 Feel free to use and modify this theme as you like.
-Fruitful is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+Fruitful is distributed under the [GPLv2 license](http://www.gnu.org/licenses/gpl-2.0.html).
 
 #Fruitful Child Demo
 
-http://nathanph.com
+Demo: http://nathanph.com  
 Demo website configured via features and theme options. Used html, css and shortcodes for display content.
 
 #Fruitful Demo
 
-http://themes.fruitfulcode.com/fruitful/
+Demo: http://themes.fruitfulcode.com/fruitful/  
 Demo website configured via features and theme options. Used html, css and shortcodes for display content.
 
 #Installation
