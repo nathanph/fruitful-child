@@ -1,9 +1,8 @@
 #Details
 
-This is a child theme for Fruitful Code's Wordpress theme: Fruitful.
-[Fruitful Github](https://github.com/Fruitfulcode/Fruitful)
+This is a child theme for Fruitful Code's Wordpress theme: Fruitful. I'm using this theme on [my site](http://nathanph.com/) currently.
 
-I'm using this theme on [my site](http://nathanph.com/) currently.
+[Fruitful Github](https://github.com/Fruitfulcode/Fruitful)
 
 #Copyright
 
