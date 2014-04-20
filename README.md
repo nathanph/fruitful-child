@@ -65,7 +65,7 @@ Easy add your links to your social profiles, which will be display in footer or 
 = 1.4.2 =
 19.04.14
 
-Update: 'shortcode_enabled_description' shortcode to 'description' …
+Update: 'shortcode_enabled_description' shortcode to 'description'
 Update: 'info_box' shortcode now allows shortcodes within it
 Update: Functions now conform to my fork of the Fruitful Wordpress template  
   
