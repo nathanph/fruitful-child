@@ -1,6 +1,7 @@
 <?php
 
 require get_stylesheet_directory() . '/inc/theme-options/theme-options.php';
+require get_stylesheet_directory() . '/inc/func/fruitful-function.php';
 
 //Create Shortcode to be used to generate random letters for smiley faces
 //[random_character]
@@ -21,52 +22,30 @@ function smiley_shortcode( ){
 }
 add_shortcode( 'smiley', 'smiley_shortcode' );
 
-function fruitful_child_add_description_block ($atts, $content = null) {
-
+function fruitful_add_description_block ($atts, $content = null) {
 	$out = "";
-
+	
 	 extract(shortcode_atts(array(
-
 		  'id'		=> 'description_0',
-
 		  'style' 	=> 'font-size: 40px; text-transform : uppercase; text-align: center; font-weight: 300;'
-
      ), $atts));
-
-   
-
+	 
     $out .= '<div class="description" id="'. $id .'">' . "\n";
-
 		$out .= '<span class="top_line"></span>' . "\n";
-
-		
-
 			if (!empty($content)) {
-
 				$out .=	'<div class="text" style="'. $style .'">' . do_shortcode($content) . '</div>';
-
 			}
-
 			else {
-
 				$out .= '<div class="text" style="'. $style .'">No text Description</div>';
-
 			}			
-
 		$out .= '<span class="btm_line"></span>' . "\n";
-
 	$out .= '</div>' . "\n";
 
-	
-
     return $out;
-
 }
 
-add_shortcode ("shortcode_enabled_description", "fruitful_child_add_description_block");
-
 /*Get footer social icons*/
-function fruitful_child_get_socials_icon () {
+function fruitful_get_socials_icon () {
 	$out = '';
 	$theme_options  = fruitful_ret_options("fruitful_theme_options"); 
 	
@@ -89,5 +68,51 @@ function fruitful_child_get_socials_icon () {
 	
 	echo '<div class="social-icon">' . $out . '</div>';
 }
+
+/*Add information box into content block*/
+function fruitful_add_info_box ($atts, $content = null) {
+	global $columns_count;
+	$out = $columns_class = "";
+	shortcode_atts(array(
+		  'id'				=> '',
+		  'icon_url' 		=> '', 
+		  'title'	   		=> '', 
+		  'type_column' 	=> '', 
+		  'alt'				=> '',
+		  'style_text'	  	=> '',
+		  'style_title'		=> ''
+     ), $atts, 'info_box');
+
+	 $id = 'info_box_0';
+	 $icon_url  = get_template_directory_uri()  . '/images/default_icon.png'; 
+	 $title		= 'Some title';
+	 $type_column = '';
+	 $alt 		  = '';
+	 $style_text  = 'text-align:center; font-size:13px; ';
+	 $style_title = 'text-align:center; font-size: 20px; text-transform: uppercase; ';
+
+	 if (isset($atts['id'])) 			{ $id = sanitize_html_class($atts['id']); }
+	 if (isset($atts['type_column'])) 	{ $type_column  = esc_attr($atts['type_column']); }
+	 if (isset($atts['icon_url'])) 		{ $icon_url 	= $atts['icon_url']; }
+	 if (isset($atts['title'])) 		{ $title 		= esc_attr($atts['title']); }
+	 if (isset($atts['alt'])) 			{ $alt 			= esc_attr($atts['alt']); }
+	 if (isset($atts['style_text'])) 	{ $style_text  	= esc_html($atts['style_text']); }
+	 if (isset($atts['style_title'])) 	{ $style_title 	= esc_html($atts['style_title']); }
+
+	 if ($columns_count != '') {
+		 if ($columns_count == 1) { $columns_class	= 'sixteen columns'; } 
+		 else if ($columns_count == 2)	{ $columns_class	= 'eight columns';} 
+		 else if ($columns_count == 3)	{ $columns_class	= 'one-third column'; } 
+		 else if ($columns_count == 4)	{ $columns_class	= 'four columns'; }
+	 }
+
+	 $out .= '<div class="'.$columns_class.' info_box '. $type_column .'" id="' . $id . '">';
+		$out .= '<img class="icon" src="'. esc_url($icon_url) .'" title="' . $title . '" alt="'.$alt.'"/>';
+		$out .= '<div class="infobox_title" style="' . $style_title .'">'  . $title . '</div>';
+		$out .= '<div class="info_box_text" style="' . $style_text .'" >'  . do_shortcode($content) . '</div>';
+	 $out .= '</div>';
+return $out;	 
+} 
+add_shortcode ("info_box", "fruitful_add_info_box");
 
 ?>

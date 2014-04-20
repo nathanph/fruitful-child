@@ -17,7 +17,7 @@
  *
  * @since Fruitful theme 1.0
  */
-function fruitful_child_theme_options_init() {
+function fruitful_theme_options_init() {
 	register_setting(
 		'fruitful_options', 		// Options group, see settings_fields() call in fruitful_theme_options_render_page()
 		'fruitful_theme_options', 	// Database option, see fruitful_get_theme_options()
@@ -86,7 +86,7 @@ function fruitful_child_theme_options_init() {
 	add_settings_field( 'slider_image',		__( 'Slides', 'fruitful' ), 		'fruitful_slider_images',	'theme_options', 'slider', array('info' => __( 'Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [fruitful_slider]. Current theme version support only one slider per website. ', 'fruitful' )) );
 	
 	add_settings_field( 'socials_links_position', 	__( 'Socials Links Position', 'fruitful' ), 	'fruitful_settings_field_socials_links_position', 'theme_options', 'links', array('info' => __( 'Choose place where social links will be displayed.', 'fruitful' )) );
-	add_settings_field( 'socials_links', 	__( 'Socials Links', 'fruitful' ), 	'fruitful_child_settings_field_socials_links', 'theme_options', 'links', array('info' => __( 'Add link to your social media profiles. Icons with link will be display in header or footer.', 'fruitful' )) );
+	add_settings_field( 'socials_links', 	__( 'Socials Links', 'fruitful' ), 	'fruitful_settings_field_socials_links', 'theme_options', 'links', array('info' => __( 'Add link to your social media profiles. Icons with link will be display in header or footer.', 'fruitful' )) );
 	add_settings_field( 'footer_text_copy',	__( 'Footer options', 'fruitful' ), 'fruitful_settings_field_footer_text', 'theme_options',   'footer', array('info' => __( 'Replace default theme copyright information and links', 'fruitful' )) );
 	add_settings_field( 'custom_css',		__( 'Custom CSS', 'fruitful' ), 'fruitful_settings_field_custom_css', 'theme_options', 'css' , array('info' => __( 'Theme has two css files style.css and fixed-style.css which use default styles for front-end responsive and static layout. Do not edit theme default css files, use textarea editor below for overwriting all css styles.', 'fruitful' )) );
 	
@@ -94,9 +94,8 @@ function fruitful_child_theme_options_init() {
 		add_option( 'fruitful_theme_options', fruitful_get_theme_options());
 	}
 }
-	//Set action priority to 11 so it overwrites default theme_options
-add_action( 'admin_init', 'fruitful_child_theme_options_init', 11 );
-function fruitful_child_settings_field_socials_links() {
+
+function fruitful_settings_field_socials_links() {
 	$options = fruitful_get_theme_options();
 	?>
 	<div class="socials">

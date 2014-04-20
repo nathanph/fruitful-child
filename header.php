@@ -42,7 +42,7 @@
 					<header id="masthead" class="site-header" role="banner">
 						<?php	
 							if (fruitful_is_social_header()) { 
-								fruitful_child_get_socials_icon(); 
+								fruitful_get_socials_icon(); 
 							} 
 									
 							$logo_pos_class = $menu_pos_class = '';

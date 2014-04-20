@@ -27,7 +27,7 @@
 						<?php fruitful_get_footer_text(); ?>
 					</div><!-- .site-info -->
 					<?php if (!fruitful_is_social_header()) { 	
-							   fruitful_child_get_socials_icon(); 
+							   fruitful_get_socials_icon(); 
 						  } 
 					?>
 				</footer><!-- #colophon .site-footer -->
