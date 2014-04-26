@@ -61,6 +61,13 @@ Choose web-safe fonts and 20 popular Google fonts.
 Easy add your links to your social profiles, which will be display in footer or header as icons.
 
 #Changelog
+
+= 1.4.3 =  
+26.04.14  
+
+* Update: Improved page load times via CSS & JS relocation and dynamic entry
+* Update: Improved page load times via Smush.it lossless image compression
+* Update: Removed unused files footer.php
  
 = 1.4.2 =  
 19.04.14  
