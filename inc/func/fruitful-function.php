@@ -129,6 +129,8 @@ return array(
 				'yelp_url'			=> '',
 				'email_link'		=> '', 
 				'github_url'		=> '', 
+				'pgp_key'			=> '', 
+				'coinbase_url'		=> '',
 
 				'custom_css'        => stripslashes('')
 		);

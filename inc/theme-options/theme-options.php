@@ -115,6 +115,8 @@ function fruitful_settings_field_socials_links() {
 		<h4>Yelp</h4>			<input id="yelp_url"		class="text-input" name="fruitful_theme_options[yelp_url]"		type="text"   value="<?php echo esc_url( $options['yelp_url'] ); ?>"/>
 		<h4>E-mail</h4>			<input id="email_link" 		class="text-input" name="fruitful_theme_options[email_link]" 	type="text"   value="<?php echo sanitize_email( $options['email_link'] ); ?>"/>				
 		<h4>Github</h4>			<input id="github_url"	 	class="text-input" name="fruitful_theme_options[github_url]" 	type="text"   value="<?php echo esc_url( $options['github_url'] ); ?>"/>
+		<h4>Public PGP Key</h4>			<input id="pgp_key"	 	class="text-input" name="fruitful_theme_options[pgp_key]" 	type="text"   value="<?php echo esc_url( $options['pgp_key'] ); ?>"/>
+		<h4>Coinbase</h4>			<input id="coinbase_url"	 	class="text-input" name="fruitful_theme_options[coinbase_url]" 	type="text"   value="<?php echo esc_url( $options['coinbase_url'] ); ?>"/>
 	</div>
 	<?php
 }	

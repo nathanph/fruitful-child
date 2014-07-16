@@ -54,6 +54,16 @@
     background-image:url(./images/github.png);
 }
 
+#masthead .social-icon a.pgp,
+#colophon .social-icon a.pgp {
+    background-image:url(./images/pgp.png);
+}
+
+#masthead .social-icon a.coinbase,
+#colophon .social-icon a.coinbase {
+    background-image:url(./images/bitcoin.png);
+}
+
 /*
 .resp-tabs-container p {
 	text-align: justify;

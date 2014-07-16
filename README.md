@@ -3,7 +3,7 @@
 This is a child theme for Fruitful Code's Wordpress theme: Fruitful.  
 [Fruitful Github](https://github.com/Fruitfulcode/Fruitful)  
 
-I'm using this theme on [my site](http://nathanph.com/) currently.
+I'm using this theme on [my site](http://nathanph.com/) currently. I've included in my child theme various load time optimizations and new features.
 
 #Copyright
 

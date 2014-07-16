@@ -82,6 +82,8 @@ function fruitful_get_socials_icon () {
 	if(!empty($theme_options['yelp_url']))			{ $out .= '<a class="yelp"		href="'		. esc_url($theme_options['yelp_url'])		. '" target="_blank"></a>'; }			
 	if(!empty($theme_options['email_link'])) 		{ $out .= '<a class="email" 	href="mailto:'		. sanitize_email($theme_options['email_link']) . '"></a>'; }			
 	if(!empty($theme_options['github_url'])) 		{ $out .= '<a class="github" 	href="'	. esc_url($theme_options['github_url']) 	. '" target="_blank"></a>';	}
+	if(!empty($theme_options['pgp_key'])) 		{ $out .= '<a class="pgp" 	href="'	. esc_url($theme_options['pgp_key']) 	. '" target="_blank"></a>';	}
+	if(!empty($theme_options['coinbase_url'])) 		{ $out .= '<a class="coinbase" 	href="'	. esc_url($theme_options['coinbase_url']) 	. '" target="_blank"></a>';	}
 	
 	echo '<div class="social-icon">' . $out . '</div>';
 }
