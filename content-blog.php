@@ -14,7 +14,7 @@
 			<?php the_post_thumbnail(); ?>
 		</div>
 	<?php endif; ?>
-	
+
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->

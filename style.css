@@ -27,18 +27,18 @@
    -webkit-text-stroke: 0.8px black;
    text-shadow:
        0.8px 0.8px 0 #000,
-     -0.8px -0.8px 0 #000,  
+     -0.8px -0.8px 0 #000,
       0.8px -0.8px 0 #000,
       -0.8px 0.8px 0 #000,
        0.8px 0.8px 0 #000;*/
 }
 
 .smiley {
-	font-family: humeur; 
-	font-size: 110%; 
+	font-family: humeur;
+	font-size: 110%;
 	font-weight: bold;
 }
- 
+
 .noshadow {
 	-webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
